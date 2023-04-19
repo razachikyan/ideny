@@ -1,0 +1,205 @@
+.footer {
+    max-width: 1630px;
+    margin-left: auto;
+}
+
+.footer__container {
+    max-width: 1155px;
+    margin: 0 auto;
+    padding-bottom: 34px;
+}
+
+.footer__controls {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 40px;
+}
+
+.controls__message {
+    display: flex;
+    max-width: 935px;
+    width: 100%;
+}
+
+.footer__search {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding-left: 68px;
+    background-image: url("../../assets/images/message.png");
+    background-repeat: no-repeat;
+    background-position: 18px center;
+    width: 80%;
+}
+
+.footer__search::placeholder {
+    opacity: 0.3;
+}
+
+.footer__button {
+    background-color: inherit;
+    border: 1px solid #00EE76;
+    padding: 18px 33px;
+    color: #00EE76;
+    font-family: "Inter";
+    font-weight: 500;
+}
+
+.footer__button:hover {
+    background-color: #03160c;
+}
+
+.footer__button:focus {
+    background-color: #020d07;
+}
+
+.android__button {
+    background-color: inherit;
+    border: 1px solid #FFFFFF;
+    padding-left: 63px;
+    background-image: url("../../assets/images/android.png");
+    background-repeat: no-repeat;
+    background-position: 27px center;
+}
+
+.android__button:hover {
+    background-color: #222222;
+}
+
+.android__button:focus {
+    background-color: #101010;
+}
+
+.footer__bottom {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    opacity: 0.5;
+}
+
+@media (max-width: 1655px) {
+    .footer__container {
+        margin-left: auto;
+        margin-right: 50px;
+    }
+}
+
+@media (max-width: 1500px) {
+    .footer__container {
+        max-width: 1000px;
+        margin-right: 75px;
+    }
+
+    .footer__controls {
+        gap: 20px;
+    }
+
+    .footer__button {
+        padding: 18px 20px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .footer__container {
+        margin-right: 30px;
+        max-width: 75%;
+    }
+
+    .footer__controls {
+        gap: 20px;
+    }
+
+    .footer__button {
+        padding: 18px 20px;
+    }
+}
+
+@media (max-width: 970px) {
+    .footer__container {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 750px) {
+    .footer__controls {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .footer__search {
+        width: 63%;
+        background-image: none;
+        padding: 20px 18px;
+        font-size: 15px;
+        line-height: 19px;
+    }
+
+    .footer__search::placeholder {
+        font-family: "Roboto";
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 19px;
+    }
+
+    .footer__button {
+        font-size: 19px;
+        line-height: 23px;
+        font-family: "Roboto";
+        width: 37%;
+        margin: 0;
+        padding: 18px 26px;
+    }
+
+    .android__button {
+        width: 100%;
+        background-position: 32% center
+    }
+}
+@media (max-width: 550px) {
+    .footer__container {
+        max-width: 320px;
+    }
+
+    .footer__controls {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin-bottom: 30px;
+    }
+
+    .footer__search {
+        width: 53%;
+        background-image: none;
+        padding: 20px 18px;
+        font-size: 15px;
+        line-height: 19px;
+        letter-spacing: -0.3px;
+    }
+
+    .footer__search::placeholder {
+        font-family: "Roboto";
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 19px;
+        letter-spacing: -0.3px;
+    }
+
+    .footer__button {
+        font-size: 19px;
+        line-height: 23px;
+        font-family: "Roboto";
+        width: 47%;
+        margin: 0;
+        padding: 18px 26px;
+    }
+
+    .android__button {
+        width: 100%;
+        background-position: 32% center
+    }
+}

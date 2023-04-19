@@ -1,0 +1,14 @@
+/*
+  Work with svg
+*/
+.social__item > svg > path {
+  transition: all 0.2s;
+}
+
+.social__item:hover > svg > path {
+  fill: #c91df4;
+}
+
+.social__item:focus > svg > path {
+  fill: #a013c4;
+}

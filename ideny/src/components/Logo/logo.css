@@ -1,0 +1,33 @@
+.logo {
+  background-image: url(../../assets/images/logo.png);
+  background-repeat: no-repeat;
+  background-size: 34px;
+  background-position: left bottom;
+}
+
+.logo__title {
+  font-weight: 700;
+  font-size: 47.0452px;
+  line-height: 55px;
+}
+
+@media (max-width: 1500px) {
+  .logo {
+    margin-left: 30px;
+  }
+}
+
+@media (max-width: 550px) {
+  .logo__title {
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 1em;
+    max-width: 47px;
+  }
+
+  .logo {
+    margin: 0;
+    height: 30px;
+    background-size: 14px;
+  }
+}

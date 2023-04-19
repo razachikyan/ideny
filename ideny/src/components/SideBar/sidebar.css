@@ -1,0 +1,31 @@
+/*
+before after + hover
+media
+bc-images
+*/
+.sidebar__item:focus::before {
+  content: "";
+  position: absolute;
+  width: 18.5px;
+  height: 18.5px;
+  transform: rotate(45deg);
+  background-color: #c91df4;
+  top: 27px;
+  left: -10px;
+}
+
+@media (max-width: 1500px) {
+  .sidebar {
+    width: 200px;
+  }
+
+  .sidebar__item {
+    padding: 25px 37px 25px 41px;
+  }
+}
+
+@media (max-width: 970px) {
+  .sidebar {
+    display: none;
+  }
+}

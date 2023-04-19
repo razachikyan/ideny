@@ -1,0 +1,140 @@
+.table {
+    width: 99.8%;
+    margin-bottom: 138px;
+    cursor: pointer;
+}
+
+.head__row {
+    outline: 1px solid #fff;
+}
+
+.head__item:first-child, .body__item:first-child {
+    padding-left: 27px;
+}
+
+.head__item:not(:last-child) {
+    padding-right: 100px;
+}
+
+.head__item:last-child {
+    padding-right: 94px;
+}
+
+.head__item {
+    text-align: left;
+    font-weight: 500;
+    font-size: 16px;
+    color: #FFFFFF;
+    opacity: 0.4;
+    padding: 23px 0;
+}
+
+
+.table__text {
+    font-weight: 500;
+    font-family: "Inter";
+    font-size: 17px;
+    line-height: 23px;
+}
+
+.table__row {
+    outline: 1px solid #222;
+}
+
+.body__box {
+    display: flex;
+    padding: 15px 0;
+    align-items: center;
+    gap: 13px;
+}
+
+
+.main__table {
+    display: flex;
+    width: 100%;
+}
+
+.mob__table {
+    display: none;
+}
+
+@media(max-width: 1500px) {
+    .head__item:not(:last-child) {
+        padding-right: 32px;
+    }
+}
+
+@media (max-width: 970px) {
+    .head__item {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .table__img {
+        display: none;
+    }
+
+    .body__box {
+        justify-content: center;
+    }
+}
+
+@media(max-width: 750px) {
+    .table {
+        display: none;
+    }
+
+    .mob__table {
+        display: table;
+        margin-bottom: 50px;
+    }
+
+    .mob__text {
+        font-family: "Inter";
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    .mob__box {
+        padding: 15px 20px;
+        outline: 1px solid rgba(255, 255, 255, .1);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        gap: 17px;
+        color: #fff;
+    }
+}
+
+@media(max-width: 550px) {
+    .table {
+        display: none;
+    }
+
+    .mob__table {
+        display: table;
+        margin-bottom: 35px;
+    }
+    .mob__text {
+        font-family: "Inter";
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .mob__img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .mob__box {
+        padding: 10px 12px;
+        gap: 10px;
+    }
+
+    .mob__box:focus {
+        outline: 1px solid #00EE76;
+    }
+}
